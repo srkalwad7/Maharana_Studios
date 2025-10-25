@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MahaRana Studios</title>
+    <meta name="description" content="MahaRana Studios — Android & web apps. Visit our site or contact us." />
+    <style>
+      :root{--bg:#0f1720;--card:#111214;--muted:#9ca3af;--accent:#fbbf24}
+      html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+      body{background:linear-gradient(180deg,var(--bg),#101216);color:#fff;display:flex;align-items:center;justify-content:center}
+      .wrap{max-width:900px;width:100%;padding:32px}
+      .card{background:linear-gradient(180deg,#111318,#0b0c0e);border:1px solid rgba(255,255,255,0.03);padding:28px;border-radius:12px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+      h1{margin:0 0 8px;font-size:28px}
+      p.lead{margin:0 0 18px;color:var(--muted)}
+      .buttons{display:flex;gap:12px;flex-wrap:wrap}
+      a.button{display:inline-block;padding:10px 16px;border-radius:999px;text-decoration:none;color:#000;background:linear-gradient(90deg,var(--accent),#f472b6);font-weight:700}
+      a.link{color:var(--accent);text-decoration:underline}
+      .apps{margin-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+      .app{background:var(--card);padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
+      small{color:var(--muted)}
+      footer{margin-top:18px;color:var(--muted);font-size:13px}
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="card">
+        <h1>MahaRana Studios</h1>
+        <p class="lead">We design and build beautiful, high-performance Android and web applications. Browse our featured apps or contact us.</p>
+
+        <div class="buttons">
+          <a class="button" href="#apps">Our Apps</a>
+          <a class="button" href="#contact">Contact</a>
+          <a class="link" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+
+        <section id="apps" class="apps" aria-label="apps">
+          <div class="app">
+            <strong>Pro Calculator</strong>
+            <div><small>Calculator and tools</small></div>
+            <div><small><a class="link" href="https://play.google.com/store/apps/details?id=com.pmk.pro_calculator" target="_blank" rel="noopener noreferrer">Play Store</a></small></div>
+          </div>
+          <div class="app">
+            <strong>WiFi Analyzer</strong>
+            <div><small>WiFi analysis tools</small></div>
+            <div><small><a class="link" href="https://play.google.com/store/apps/details?id=com.srk.wifianalyzer" target="_blank" rel="noopener noreferrer">Play Store</a></small></div>
+          </div>
+          <div class="app">
+            <strong>Pro Coding Studio</strong>
+            <div><small>Powerful coding platform</small></div>
+            <div><small><a class="link" href="https://play.google.com/store/apps/details?id=com.pmk.pro_coding_studio" target="_blank" rel="noopener noreferrer">Play Store</a></small></div>
+          </div>
+        </section>
+
+        <section id="contact" style="margin-top:18px">
+          <h2 style="font-size:16px;margin:0 0 8px">Contact</h2>
+          <p style="margin:0 0 8px;color:var(--muted)">Questions about a project or need a quote? Email us:</p>
+          <p style="margin:0 0 8px"><a class="link" href="mailto:maharanastudios@gmail.com">maharanastudios@gmail.com</a></p>
+          <p style="margin:0;color:var(--muted)"><small>Or use the site contact form if you visit the live Next.js site.</small></p>
+        </section>
+
+        <footer>
+          <div>&copy; <span id="year"></span> MahaRana Studios — Built for GitHub Pages</div>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
